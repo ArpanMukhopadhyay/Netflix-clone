@@ -8,7 +8,8 @@ import Header from '../components/Header'
 
 const Home : NextPage = () =>{
   return(
-    <div className='flex min-h-screen flex-col py-2'>
+    <div className='relative h-screen bg-gradient-to-b from-gray-900/10
+    to-[#0105111] lg:h-[140vh]'>
       <Head>
         <title>Home - Netflix</title>
         <link rel="icon" href="/favicon.ico" />
