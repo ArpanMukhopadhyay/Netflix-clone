@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import {NextPage} from 'next'
 import Head from 'next/head'
 import Header from '../components/Header'
+import Banner from '@/components/Banner'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ const Home : NextPage = () =>{
       </Head>
       <Header/>
       <main>
-        {/* Banner */}
+        <Banner/>
         <section>
           {/* Row */}
           {/* Row */}
