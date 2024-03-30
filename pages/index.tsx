@@ -7,7 +7,7 @@ import Banner from '@/components/Banner'
 import requests from '../utils/requests'
 // const inter = Inter({ subsets: ['latin'] })
 
-const Home : NextPage = () =>{
+const Home = ({netflixOriginals}) =>{
   return(
     <div className='relative h-screen bg-gradient-to-b from-gray-900/10
     to-[#0105111] lg:h-[140vh]'>
@@ -63,6 +63,6 @@ export const getServerSideProps = async () => {
       horrorMovies: horrorMovies.results,
       romanceMovies: romanceMovies.results,
       documentaries: documentaries.results,
-    }
+    },
   }
 }
