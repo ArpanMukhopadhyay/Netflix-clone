@@ -5,9 +5,30 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Banner from '@/components/Banner'
 import requests from '../utils/requests'
+import { Movie } from '@/typings'
 // const inter = Inter({ subsets: ['latin'] })
 
-const Home = ({netflixOriginals}) =>{
+interface Props {
+  netflixOriginals: Movie[]
+  trendingNow: Movie[]
+  topRated: Movie[]
+  actionMovies: Movie[]
+  comedyMovies: Movie[]
+  horrorMovies: Movie[]
+  romanceMovies: Movie[]
+  documentaries: Movie[]
+}
+
+const Home = ({ 
+  netflixOriginals,
+  actionMovies,
+  comedyMovies,
+  documentaries,
+  horrorMovies,
+  romanceMovies,
+  topRated,
+  trendingNow,}: Props) => {
+  console.log(netflixOriginals)
   return(
     <div className='relative h-screen bg-gradient-to-b from-gray-900/10
     to-[#0105111] lg:h-[140vh]'>
@@ -17,7 +38,7 @@ const Home = ({netflixOriginals}) =>{
       </Head>
       <Header/>
       <main>
-        <Banner/>
+        <Banner netflixOriginals={netflixOriginals}/>
         <section>
           {/* Row */}
           {/* Row */}
