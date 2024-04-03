@@ -2,7 +2,9 @@ import {Movie} from '../typings'
 import Image from 'next/image'
 
 interface Props{
-    movie: Movie
+    movie: Movie 
+    //When using firebase
+    // movie: Movie | DocumentData
 }
 function Thumbnail({movie}: Props) {
   return (
@@ -13,6 +15,7 @@ function Thumbnail({movie}: Props) {
         }`}
         className='rounded-sm object-cover md:rounded'
         layout = "fill"
+        alt =""
         />
     </div>
   )
