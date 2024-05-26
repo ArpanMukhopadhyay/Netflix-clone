@@ -7,7 +7,6 @@ import Banner from '@/components/Banner'
 import requests from '../utils/requests'
 import { Movie } from '@/typings'
 import Row from '../components/Row'
-// const inter = Inter({ subsets: ['latin'] })
 
 interface Props {
   netflixOriginals: Movie[]
